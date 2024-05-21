@@ -7,12 +7,19 @@ services:
     volumes:
       - ./data/newsboat/:/root/.newsboat
     restart: always
+    depends_on:
+      - postgres
 
-volumes:
-  newsboat-config:
-    driver: local
-  newsboat-data:
-    driver: local
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: rss
+    volumes:
+      - ./data/newsboat/pgdata/:/var/lib/postgresql/data
+    restart: always
 
 # Ensure the following directories are created on the host:
 # ./newsboat-config: To store the Newsboat configuration files

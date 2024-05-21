@@ -34,11 +34,11 @@ COPY urls /root/urls
 RUN mkdir -p /root/.newsboat
 
 # Copy the entrypoint script
-COPY entrypoint.fish /usr/local/bin/entrypoint.fish
+COPY start.fish /usr/local/bin/start.fish
 
 # Make the entrypoint script executable
-RUN chmod +x /usr/local/bin/entrypoint.fish
+RUN chmod +x /usr/local/bin/start.fish
 
 # Set the entrypoint
-ENTRYPOINT ["/usr/local/bin/entrypoint.fish"]
+ENTRYPOINT ["/usr/local/bin/start.fish"]
 

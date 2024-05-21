@@ -1,17 +1,12 @@
 articlelist-format "%4i %4L %D %t %a %F"
 article-sort-order date-asc
 auto-reload yes
-bookmark-autopilot yes
-bookmark-cmd "~/bin/to-read.fish"
-bookmark-interactive no
-browser "w3m %u"
-cache-file "./cache.db"
+cache-file "/root/.newsboat/cache.db"
 cleanup-on-quit yes
 color info black white
 color listfocus black white
 color listfocus_unread black white
-confirm-mark-feed-read no
-cookie-cache "./cookies.txt"
+cookie-cache "/root/.newsboat/cookies.txt"
 datetime-format "%y/%m/%d"
 delete-read-articles-on-quit yes
 display-article-progress yes
@@ -30,7 +25,7 @@ refresh-on-startup yes
 reload-only-visible-feeds no
 reload-threads 16
 reload-time 60
-save-path "./save/"
+save-path "/root/.newsboat/save/"
 show-read-articles no
 show-read-feeds no
 wrap-scroll yes

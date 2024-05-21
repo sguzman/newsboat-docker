@@ -13,7 +13,7 @@ RUN pacman -Syu --noconfirm && \
     sqlite
 
 # Create a directory for Newsboat configuration and data
-RUN mkdir -p /root/.newsboat /root/.newsboat-data
+RUN mkdir -p /root/.newsboat
 
 # Set the working directory
 WORKDIR /root

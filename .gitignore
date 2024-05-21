@@ -160,3 +160,4 @@ cython_debug/
 #.idea/
 cache.db
 cache.db.lock
+cookies.txt

@@ -28,13 +28,7 @@ USER root
 WORKDIR /root
 
 # Add url files here
-COPY urls/youtube.txt /root/youtube.txt
-
-COPY urls/tradingecon.txt /root/tradingecon.txt
-
-COPY urls/podcasts.txt /root/podcasts.txt
-
-COPY urls/govinfo.txt /root/govinfo.txt
+COPY urls /root/urls
 
 # Create a directory for Newsboat configuration and data
 RUN mkdir -p /root/.newsboat

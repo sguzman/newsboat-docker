@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   newsboat:
-    image: newsboat-arch 
+    image: guzmansalv/newsboat-arch 
     container_name: newsboat
     volumes:
       - ./data/newsboat/:/root/.newsboat

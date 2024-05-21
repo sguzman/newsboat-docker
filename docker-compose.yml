@@ -6,7 +6,6 @@ services:
     container_name: newsboat
     volumes:
       - ./data/newsboat/:/root/.newsboat
-    command: sh -c "while true; do newsboat -x reload; sleep 300; done"
     restart: always
 
 volumes:

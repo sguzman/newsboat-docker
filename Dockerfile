@@ -31,11 +31,11 @@ WORKDIR /root
 RUN mkdir -p /root/.newsboat
 
 # Copy the entrypoint script
-COPY entrypoint.sh /usr/local/bin/entrypoint.sh
+COPY entrypoint.fish /usr/local/bin/entrypoint.fish
 
 # Make the entrypoint script executable
-RUN chmod +x /usr/local/bin/entrypoint.sh
+RUN chmod +x /usr/local/bin/entrypoint.fish
 
 # Set the entrypoint
-ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
+ENTRYPOINT ["/usr/local/bin/entrypoint.fish"]
 

@@ -1,0 +1,36 @@
+articlelist-format "%4i %4L %D %t %a %F"
+article-sort-order date-asc
+auto-reload yes
+bookmark-autopilot yes
+bookmark-cmd "~/bin/to-read.fish"
+bookmark-interactive no
+browser "w3m %u"
+cache-file "./cache.db"
+cleanup-on-quit yes
+color info black white
+color listfocus black white
+color listfocus_unread black white
+confirm-mark-feed-read no
+cookie-cache "./cookies.txt"
+datetime-format "%y/%m/%d"
+delete-read-articles-on-quit yes
+display-article-progress yes
+download-retries 4
+download-timeout 60
+feedlist-format "%4i %11u %t %d %L"
+feed-sort-order lastupdated-desc
+history-limit 0
+mark-as-read-on-hover yes
+max-items 0
+notify-always no
+notify-beep yes
+pager "bat %f"
+prepopulate-query-feeds yes
+refresh-on-startup yes
+reload-only-visible-feeds no
+reload-threads 16
+reload-time 60
+save-path "./save/"
+show-read-articles no
+show-read-feeds no
+wrap-scroll yes

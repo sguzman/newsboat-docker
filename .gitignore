@@ -161,3 +161,4 @@ cython_debug/
 cache.db
 cache.db.lock
 cookies.txt
+data/

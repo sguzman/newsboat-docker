@@ -10,7 +10,8 @@ RUN pacman -Syu --noconfirm && \
     base-devel \
     git \
     newsboat \
-    sqlite
+    sqlite \
+    pgloader
 
 # Create a directory for Newsboat configuration and data
 RUN mkdir -p /root/.newsboat
